@@ -3,6 +3,7 @@ import {Suspense} from 'react';
 import {Aside} from '~/components/Aside';
 import {Footer} from '~/components/Footer';
 import {Header, HeaderMenu} from '~/components/Header';
+import {NailsHeader} from './NailsHeader';
 import {CartMain} from '~/components/Cart';
 import {
   PredictiveSearchForm,
@@ -12,16 +13,13 @@ import {
 export function Layout({cart, children = null, footer, header, isLoggedIn}) {
   return (
     <>
-      <CartAside cart={cart} />
+      {/* <CartAside cart={cart} />
       <SearchAside />
       <MobileMenuAside menu={header.menu} />
-      <Header header={header} cart={cart} isLoggedIn={isLoggedIn} />
-      <main>{children}</main>
-      <Suspense>
-        <Await resolve={footer}>
-          {(footer) => <Footer menu={footer.menu} />}
-        </Await>
-      </Suspense>
+      <Header header={header} cart={cart} isLoggedIn={isLoggedIn} />*/}
+      <NailsHeader />
+      <main class="flex-1">{children}</main>
+      <Footer />
     </>
   );
 }

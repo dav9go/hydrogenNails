@@ -14,7 +14,6 @@ import {
 } from '@remix-run/react';
 import favicon from '../public/favicon.svg';
 import resetStyles from './styles/reset.css';
-import appStyles from './styles/app.css';
 import {Layout} from '~/components/Layout';
 import tailwindCss from './styles/tailwind.css';
 
@@ -37,7 +36,6 @@ export function links() {
   return [
     {rel: 'stylesheet', href: tailwindCss},
     {rel: 'stylesheet', href: resetStyles},
-    {rel: 'stylesheet', href: appStyles},
     {
       rel: 'preconnect',
       href: 'https://cdn.shopify.com',
@@ -97,14 +95,14 @@ export default function App() {
   const data = useLoaderData();
 
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body>
+      <body class="min-h-screen max-w-screen flex flex-col font-russo">
         <Layout {...data}>
           <Outlet />
         </Layout>
@@ -131,7 +129,7 @@ export function ErrorBoundary() {
   }
 
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
