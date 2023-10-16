@@ -1,6 +1,7 @@
 //Components
 import {FourProducts} from '~/components/Fourproducts';
 import {VerticalPic} from '~/components/VerticalPic';
+import {Hero} from '~/components/Hero';
 //Data
 import {useLoaderData} from '@remix-run/react';
 //Images
@@ -24,6 +25,9 @@ export default function Index() {
 
   return (
     <>
+      <section class="p-10 pt-20 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none">
+        <Hero />
+      </section>
       <section class="p-10 pt-20 flex justify-evenly select-none">
         <VerticalPic alt="Uñas de diseño" img={fancyNail} text="Único" />
         <VerticalPic alt="Uñas de diseño" img={blackNail} text="Elegante" />
