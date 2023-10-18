@@ -2,8 +2,8 @@ import {Await} from '@remix-run/react';
 import {Suspense} from 'react';
 import {Aside} from '~/components/Aside';
 import {Footer} from '~/components/Footer';
-import {Header, HeaderMenu} from '~/components/Header';
-import {NailsHeader} from './NailsHeader';
+import {Header, HeaderMenu} from '~/components/Header/Header';
+import {NailsHeader} from './Header/NailsHeader';
 import {CartMain} from '~/components/Cart';
 import {
   PredictiveSearchForm,

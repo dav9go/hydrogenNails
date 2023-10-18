@@ -11,7 +11,7 @@ import snakeNail from '../images/snakeNail.jpeg';
 
 export function meta() {
   return [
-    {title: 'Hydrogen'},
+    {title: 'Su Nails'},
     {description: 'A custom storefront powered by Hydrogen'},
   ];
 }
