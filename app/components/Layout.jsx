@@ -19,7 +19,7 @@ export function Layout({cart, children = null, footer, header, isLoggedIn}) {
       <Header header={header} cart={cart} isLoggedIn={isLoggedIn} />*/}
       <NailsHeader />
       <main class="flex-1">{children}</main>
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 }

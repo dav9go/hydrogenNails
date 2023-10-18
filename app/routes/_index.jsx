@@ -25,7 +25,7 @@ export default function Index() {
 
   return (
     <>
-      <section class="p-10 pt-20 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none">
+      <section class="p-5 lg:p-10 pt-20 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none">
         <Hero />
       </section>
       <section class="p-10 pt-20 flex justify-evenly select-none">
@@ -37,7 +37,7 @@ export default function Index() {
           text="Personalizado"
         />
       </section>
-      <section class="p-2 lg:py-20 lg:px-20 bg-[#00000011]">
+      {/*<section class="p-2 lg:py-20 lg:px-20 bg-[#00000011]">
         <h2 class="text-[2vw] text-center mb-5">
           Manicura personalizada con diseños únicos
         </h2>
@@ -49,10 +49,10 @@ export default function Index() {
           sofisticadas. Deja que tus manos hablen por ti y experimenta la
           perfección en cada detalle.{' '}
         </p>
-      </section>
-      <section class="p-2 lg:py-20 lg:px-20">
+  </section>*/}
+      {/*<section class="p-2 lg:py-20 lg:px-20">
         <FourProducts products={products} />
-      </section>
+      </section>*/}
     </>
   );
 }

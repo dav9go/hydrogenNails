@@ -26,7 +26,7 @@ export function Hero() {
 
   return (
     <>
-      <div className="w-full xl:w-[40%] flex text-7xl md:text-9xl xl:text-[6vw] font-semibold  py-10 lg:py-36">
+      <div className="w-full xl:w-[40%] flex text-6xl md:text-9xl xl:text-[6vw] font-semibold  py-10 lg:py-36">
         <h1 className="xl:leading-[8vw]">
           <span>NUESTROS</span> <br></br>
           <span>DISEÑOS</span> <br></br>

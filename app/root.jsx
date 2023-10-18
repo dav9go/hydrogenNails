@@ -44,19 +44,6 @@ export function links() {
       rel: 'preconnect',
       href: 'https://shop.app',
     },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com',
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-      crossOrigin: 'anonymous',
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Russo+One&family=Satisfy&display=swap',
-    },
     {rel: 'icon', type: 'image/svg+xml', href: favicon},
   ];
 }
@@ -115,7 +102,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="min-h-screen max-w-screen flex flex-col font-sans">
+      <body className="min-h-screen max-w-screen flex flex-col font-russo">
         <Layout {...data}>
           <Outlet />
         </Layout>

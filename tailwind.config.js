@@ -5,7 +5,11 @@ import typographyPlugin from '@tailwindcss/typography';
 export default {
   content: ['./app/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        russo: ['Russo', 'sans-serif'],
+      },
+    },
   },
   plugins: [formsPlugin, typographyPlugin],
 };
