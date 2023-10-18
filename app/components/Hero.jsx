@@ -26,8 +26,8 @@ export function Hero() {
 
   return (
     <>
-      <div className="w-full xl:w-[40%] flex text-6xl md:text-9xl xl:text-[6vw] font-semibold  py-10 lg:py-36">
-        <h1 className="xl:leading-[8vw]">
+      <div className="w-full xl:w-[40%] flex text-5xl md:text-9xl xl:text-[5.5vw] font-semibold  py-10 lg:py-36">
+        <h1 className="xl:leading-[7.5vw]">
           <span>NUESTROS</span> <br></br>
           <span>DISEÑOS</span> <br></br>
           <span ref={titleRef}>ÚNICOS</span>

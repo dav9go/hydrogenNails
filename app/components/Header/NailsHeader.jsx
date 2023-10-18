@@ -18,7 +18,7 @@ export function NailsHeader() {
         width="1709"
         height="279"
       />
-      <h1 class="text-5xl">Su Nails</h1>
+      <h1 class="text-5xl">SuNails</h1>
       <nav class="flex">
         <ul class="hidden lg:flex gap-5 items-center select-none">
           <li>
