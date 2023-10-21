@@ -26,27 +26,27 @@ export function Hero() {
 
   return (
     <>
-      <div className="w-full xl:w-[40%] flex text-5xl md:text-9xl xl:text-[5.5vw] font-semibold  py-10 lg:py-36">
-        <h1 className="xl:leading-[7.5vw]">
+      <div className="p-5 lg:pl-10 lg:pt-10 lg:pb-10  w-full xl:w-[40%] flex text-[15vw] xl:text-[5.5vw] font-semibold  py-10 xl:py-36">
+        <p className="xl:leading-[7.5vw] -z-20">
           <span>NUESTROS</span> <br></br>
           <span>DISEÑOS</span> <br></br>
           <span ref={titleRef}>ÚNICOS</span>
-        </h1>
+        </p>
       </div>
-      <div className="w-full xl:w-[60%] flex flex-col items-center justify-center gap-10 xl:gap-0">
-        <div className=" h-[500px] xl:h-2/3 flex gap-5">
-          <div className="h-full w-1/3 rounded-[8px] overflow-hidden shadow-lg">
+      <div className="w-full xl:w-[60%]  lg:px-10 xl:pr-10 flex flex-col items-center justify-center gap-10 xl:gap-0">
+        <div className=" lg:h-[500px] xl:h-2/3 flex flex-col md:flex-row lg:gap-5">
+          <div className="h-full w-full md:w-1/3 lg:rounded-[8px] overflow-hidden shadow-lg">
             <img className="w-full h-full object-cover" src={manicura2} />
           </div>
-          <div className="h-full w-1/3 rounded-[8px] overflow-hidden shadow-lg">
+          <div className="h-full w-full md:w-1/3 lg:rounded-[8px] overflow-hidden shadow-lg">
             <img className="w-full h-full object-cover" src={manicura3} />
           </div>
-          <div className="h-full w-1/3 rounded-[8px] overflow-hidden shadow-lg">
+          <div className="h-full w-full md:w-1/3 lg:rounded-[8px] overflow-hidden shadow-lg">
             <img className="w-full h-full object-cover" src={manicura4} />
           </div>
         </div>
-        <div className="h-1/3 w-full flex justify-center items-center">
-          <h2 className="2xl:max-w-[70%] text-center text-xl">
+        <div className="px-5 2xl:px-0 h-1/3 w-full flex justify-center items-center">
+          <h2 className="text-center text-xl">
             Sumérgete en el mundo del lujo y la elegancia. Descubre una
             experiencia de manicura única, donde la belleza de tus uñas alcanza
             su máximo esplendor. En nuestro exclusivo salón, combinamos la

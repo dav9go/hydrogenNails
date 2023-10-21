@@ -34,7 +34,7 @@ export function MenuBurger() {
       <div
         className={`flex fixed lg:hidden transition-all duration-1000 ${
           menuOpened ? '-top-full' : 'top-full'
-        }  -left-32 w-[400vw] h-[400vh] bg-[#e7c6ff] z-40 rounded-full`}
+        }  -left-32 w-[400vw] h-[400vh] bg-[#e7c6ff] z-50 rounded-full`}
       ></div>
       <div
         className={`flex fixed lg:hidden transition-all duration-1000 ${

@@ -25,10 +25,10 @@ export default function Index() {
 
   return (
     <>
-      <section class="p-5 lg:p-10 pt-20 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none">
+      <section class="pt-20 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none">
         <Hero />
       </section>
-      <section class="p-10 pt-20 flex justify-evenly select-none">
+      <section class="py-10 pt-20 flex flex-col md:flex-row select-none -z-20">
         <VerticalPic alt="Uñas de diseño" img={fancyNail} text="Único" />
         <VerticalPic alt="Uñas de diseño" img={blackNail} text="Elegante" />
         <VerticalPic
