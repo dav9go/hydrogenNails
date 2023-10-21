@@ -18,7 +18,7 @@ export function Layout({cart, children = null, footer, header, isLoggedIn}) {
       <MobileMenuAside menu={header.menu} />
       <Header header={header} cart={cart} isLoggedIn={isLoggedIn} />*/}
       <NailsHeader />
-      <main class="flex-1">{children}</main>
+      <main className="flex-1">{children}</main>
       {/*<Footer />*/}
     </>
   );

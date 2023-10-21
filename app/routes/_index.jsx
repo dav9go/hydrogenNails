@@ -2,6 +2,7 @@
 import {FourProducts} from '~/components/Fourproducts';
 import {VerticalPic} from '~/components/VerticalPic';
 import {Hero} from '~/components/Hero';
+import {Marquee} from '~/components/MainPage/Marquee';
 //Data
 import {useLoaderData} from '@remix-run/react';
 //Images
@@ -25,7 +26,8 @@ export default function Index() {
 
   return (
     <>
-      <section class="pt-20 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none">
+      <section class="pt-44 xl:pt-32 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none relative overflow-hidden">
+        <Marquee />
         <Hero />
       </section>
       <section class="py-10 pt-20 flex flex-col md:flex-row select-none -z-20">
@@ -37,6 +39,7 @@ export default function Index() {
           text="Personalizado"
         />
       </section>
+
       {/*<section class="p-2 lg:py-20 lg:px-20 bg-[#00000011]">
         <h2 class="text-[2vw] text-center mb-5">
           Manicura personalizada con diseños únicos

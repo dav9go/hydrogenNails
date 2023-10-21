@@ -9,7 +9,7 @@ import {MenuBurger} from './MenuBurger';
 
 export function NailsHeader() {
   return (
-    <header class="sticky top-0 p-3 flex justify-between items-center text-xl bg-gradient-to-b from-white from-10% via-white via-70% to-transparent">
+    <header class="fixed w-full top-0 p-3 flex justify-between items-center text-xl bg-gradient-to-b from-white from-10% via-white via-70% to-transparent z-[1000]">
       <img
         loading="eager"
         className="select-none absolute -left-20 -bottom-10 -z-20 w-[400px]"
