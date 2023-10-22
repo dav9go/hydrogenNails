@@ -3,6 +3,7 @@ import {FourProducts} from '~/components/Fourproducts';
 import {VerticalPic} from '~/components/VerticalPic';
 import {Hero} from '~/components/Hero';
 import {Marquee} from '~/components/MainPage/Marquee';
+import {Button} from '~/components/Button';
 //Data
 import {useLoaderData} from '@remix-run/react';
 //Images
@@ -117,13 +118,22 @@ export async function loader({context}) {
 }
 
 export default function Index() {
-  const {products} = useLoaderData();
+  /*const {products} = useLoaderData();*/
 
   return (
     <>
       <section class="pt-44 xl:pt-32 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none relative overflow-hidden">
         <Marquee />
         <Hero />
+      </section>
+
+      <section class="p-2 py-10 lg:py-20 lg:px-20 mt-20 bg-[#00000011] flex flex-col gap-5">
+        <h2 class="text-4xl text-center mb-5">Contacta YA con nosotros</h2>
+        <p class="text-center text-lg max-w-[800px] mx-auto">
+          ¿Listo para lucir una manicura única? ¡Ponte en contacto con nosotros
+          y reserva tu cita ahora para dar vida a tus ideas!
+        </p>
+        <Button text="Contacta ya" />
       </section>
       <section class="py-10 pt-20 flex flex-col md:flex-row select-none -z-20">
         <VerticalPic
@@ -149,19 +159,6 @@ export default function Index() {
         />
       </section>
 
-      {/*<section class="p-2 lg:py-20 lg:px-20 bg-[#00000011]">
-        <h2 class="text-[2vw] text-center mb-5">
-          Manicura personalizada con diseños únicos
-        </h2>
-        <p class="text-center text-[1vw] max-w-[800px] mx-auto">
-          Sumérgete en el mundo del lujo y la elegancia. Descubre una
-          experiencia de manicura única, donde la belleza de tus uñas alcanza su
-          máximo esplendor. En nuestro exclusivo salón, combinamos la artesanía
-          con los productos de alta gama para brindarte uñas impecables y
-          sofisticadas. Deja que tus manos hablen por ti y experimenta la
-          perfección en cada detalle.{' '}
-        </p>
-  </section>*/}
       {/*<section class="p-2 lg:py-20 lg:px-20">
         <FourProducts products={products} />
       </section>*/}
