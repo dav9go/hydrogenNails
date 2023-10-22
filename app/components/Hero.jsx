@@ -64,14 +64,14 @@ export function Hero() {
           </div>
         </div>
         <div className="px-5 2xl:px-0 h-1/3 w-full flex justify-center items-center">
-          <h2 className=" text-center text-xl">
+          <p className=" text-center text-xl">
             Sumérgete en el mundo del lujo y la elegancia. Descubre una
             experiencia de manicura única, donde la belleza de tus uñas alcanza
             su máximo esplendor. En nuestro exclusivo salón, combinamos la
             artesanía con los productos de alta gama para brindarte uñas
             impecables y sofisticadas. Deja que tus manos hablen por ti y
             experimenta la perfección en cada detalle.
-          </h2>
+          </p>
         </div>
       </div>
     </>

@@ -1,16 +1,3 @@
-//Components
-import {FourProducts} from '~/components/Fourproducts';
-import {VerticalPic} from '~/components/VerticalPic';
-import {Hero} from '~/components/Hero';
-import {Marquee} from '~/components/MainPage/Marquee';
-import {Button} from '~/components/Button';
-//Data
-import {useLoaderData} from '@remix-run/react';
-//Images
-import blackNail from '../images/blackNail.jpeg';
-import fancyNail from '../images/fancyNail.jpeg';
-import snakeNail from '../images/snakeNail.jpeg';
-
 export function meta() {
   return [
     {title: 'Su Nails | Manicura personalizada en Zaragoza'},
@@ -113,83 +100,12 @@ export function meta() {
   ];
 }
 
-export async function loader({context}) {
-  return await context.storefront.query(PRODUCTS_QUERY);
-}
-
-export default function Index() {
-  const {products} = useLoaderData();
-
+export default function Contacto() {
   return (
     <>
-      <section class="pt-44 xl:pt-32 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none relative overflow-hidden">
-        <Marquee />
-        <Hero />
-      </section>
-      <section class="p-2 py-10 lg:py-20 lg:px-20 mt-20 lg:mt-0 bg-[#00000011] flex flex-col gap-5">
-        <h1 class="text-4xl text-center mb-5">
-          Contacta YA con nosotros en ZARAGOZA
-        </h1>
-        <p class="text-center text-lg max-w-[800px] mx-auto">
-          ¿Listo para lucir una manicura única? ¡Ponte en contacto con nosotros
-          y reserva tu cita ahora para dar vida a tus ideas!
-        </p>
-        <Button text="Contacta ya" />
-      </section>
-      <section class="py-10 pt-20 flex flex-col md:flex-row select-none -z-20">
-        <VerticalPic
-          alt="Uñas de diseño lujoso"
-          img={fancyNail}
-          text="Único"
-          width="1148"
-          height="1600"
-        />
-        <VerticalPic
-          alt="Uñas de diseño premium"
-          img={blackNail}
-          text="Elegante"
-          width="928"
-          height="1311"
-        />
-        <VerticalPic
-          alt="Uñas de diseño único"
-          img={snakeNail}
-          text="Personalizado"
-          width="1125"
-          height="1564"
-        />
-      </section>
-
-      <section class="flex flex-col gap-10 p-2 lg:py-20 lg:px-20">
-        <h2 className="text-2xl">
-          Modelos temporada <span className="text-amber-500">Halloween</span>
-        </h2>
-        <FourProducts products={products} />
+      <section className="mt-36 lg:mt-44 p-2 lg:px-20">
+        <h1 className="text-4xl">Contacta YA. No te quedes, con las ganas!</h1>
       </section>
     </>
   );
 }
-
-const PRODUCTS_QUERY = `#graphql
-query FourProducts {
-  products(first: 4) {
-    nodes {
-      id
-      price: priceRange {
-        minVariantPrice {
-          amount
-        }
-      }
-      title
-      description
-      featuredImage {
-        altText
-        height
-        width
-        url
-      }
-      
-    }
-  }
-}
-`;

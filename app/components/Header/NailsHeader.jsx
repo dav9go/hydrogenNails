@@ -18,31 +18,28 @@ export function NailsHeader() {
         width="1709"
         height="279"
       />
-      <h1 className="text-5xl">SuNails</h1>
+      <p className="text-5xl">SuNails</p>
       <nav className="flex">
         <ul className="hidden lg:flex gap-5 items-center select-none">
           <li>
-            <NavLink
-              href="/"
-              className="lg:hover:text-[#e7c6ff] transition-all"
-            >
+            <NavLink to="/" className="lg:hover:text-[#e7c6ff] transition-all">
               Showcase
             </NavLink>
           </li>
           <li>
             <NavLink
-              href="/manicura"
+              to="/blog"
               className="lg:hover:text-[#e7c6ff] transition-all"
             >
-              Manicura
+              Blog
             </NavLink>
           </li>
           <li>
             <NavLink
-              href="#"
+              to="/contacto"
               className="lg:hover:text-[#e7c6ff] transition-all"
             >
-              Colección
+              Contacto
             </NavLink>
           </li>
           {/*<li>{userIcon}</li>
