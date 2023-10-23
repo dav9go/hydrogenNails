@@ -1,5 +1,8 @@
 //Data
 import {useLoaderData} from '@remix-run/react';
+//Components
+import FirstBlog from '~/components/Blog/FirstBlog';
+import SecondaryBlog from '~/components/Blog/SecondaryBlog';
 
 export function meta() {
   return [
@@ -109,13 +112,21 @@ export async function loader({context}) {
 
 export default function Blog() {
   const {blogs} = useLoaderData();
-
+  const [firstBlog, ...restOfBlogs] = blogs?.nodes[0]?.articles.nodes;
+  console.log(firstBlog, 'firstBlog');
+  console.log(restOfBlogs, 'restOfBlogss');
   return (
     <>
-      <section className="mt-36 lg:mt-44 p-2 lg:px-20">
+      <section className="mt-36 lg:mt-44 p-2 lg:px-20 flex flex-col gap-10">
         <h1 className="text-4xl">Blog. Nice, very Nice!</h1>
 
-        {blogs?.nodes[0].articles.nodes[0].title}
+        <FirstBlog firstBlog={firstBlog} />
+
+        <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-5">
+          {restOfBlogs.map((blog) => {
+            return <SecondaryBlog key={blog.id} blog={blog} />;
+          })}
+        </section>
       </section>
     </>
   );
@@ -123,37 +134,40 @@ export default function Blog() {
 
 const BLOGS_QUERY = `#graphql
 query Blogs {
-    blogs(first: 10) {
-      nodes {
-        id
+  blogs(first: 1) {
+    nodes {
+      id
+      title
+      handle
+      seo {
         title
-        handle
-        seo {
+        description
+      }
+      articles(first: 5) {
+        nodes {
+          id
           title
-          description
-        }
-        articles(first: 5) {
-          nodes {
-            id
+          seo {
             title
-            seo {
-              title
-              description
-            }
-            tags
-            excerpt
-            publishedAt
-            image {
-              altText
-              height
-              width
-              id
-              url
-            }
-            contentHtml
+            description
           }
+          authorV2 {
+            name
+          }
+          tags
+          excerpt
+          publishedAt
+          image {
+            altText
+            height
+            width
+            id
+            url
+          }
+          contentHtml
         }
       }
     }
   }
+}
 `;
