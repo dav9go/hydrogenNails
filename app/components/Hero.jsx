@@ -42,6 +42,7 @@ export function Hero() {
               alt="Manicura personalizada boda"
               width="824"
               height="771"
+              loading="lazy"
             />
           </div>
           <div className="h-full w-full md:w-1/3 lg:rounded-[8px] overflow-hidden shadow-lg">
@@ -51,6 +52,7 @@ export function Hero() {
               alt="Manicura personalizada roja"
               width="1268"
               height="1173"
+              loading="lazy"
             />
           </div>
           <div className="h-full w-full md:w-1/3 lg:rounded-[8px] overflow-hidden shadow-lg">
@@ -60,6 +62,7 @@ export function Hero() {
               alt="Manicura personalizada elegante"
               width="1290"
               height="1176"
+              loading="lazy"
             />
           </div>
         </div>

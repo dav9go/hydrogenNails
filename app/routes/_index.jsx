@@ -7,9 +7,9 @@ import {Button} from '~/components/Button';
 //Data
 import {useLoaderData} from '@remix-run/react';
 //Images
-import blackNail from '../images/blackNail.jpeg';
-import fancyNail from '../images/fancyNail.jpeg';
-import snakeNail from '../images/snakeNail.jpeg';
+import blackNail from '../images/blackNail.webp';
+import fancyNail from '../images/fancyNail.webp';
+import snakeNail from '../images/snakeNail.webp';
 
 export function meta() {
   return [
