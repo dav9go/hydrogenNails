@@ -34,9 +34,15 @@ export function Footer() {
           </li>
         </ul>
         <div className="w-1/3 hidden lg:flex justify-center items center gap-20">
-          <NavLink to="/contacto">{instagramIcon}</NavLink>
-          <NavLink to="/contacto">{facebookIcon}</NavLink>
-          <NavLink to="/contacto">{twitterIcon}</NavLink>
+          <NavLink aria-label="Visita nuestro instagram" to="/contacto">
+            {instagramIcon}
+          </NavLink>
+          <NavLink aria-label="Echa un ojo a nuestro facebook" to="/contacto">
+            {facebookIcon}
+          </NavLink>
+          <NavLink aria-label="Leenos en twitter" to="/contacto">
+            {twitterIcon}
+          </NavLink>
         </div>
         <ul className="w-full md:w-1/2  lg:w-1/3  mx-5 lg:mx-20 flex flex-col items-center gap-3 font-satisfy text-sm">
           <li>
