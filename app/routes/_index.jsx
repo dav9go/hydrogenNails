@@ -122,21 +122,21 @@ export default function Index() {
 
   return (
     <>
-      <section class="pt-44 xl:pt-32 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none relative overflow-hidden">
+      <section className="pt-44 xl:pt-32 flex flex-col xl:flex-row gap-10 xl:gap-0 select-none relative overflow-hidden">
         <Marquee />
         <Hero />
       </section>
-      <section class="p-2 py-10 lg:py-20 lg:px-20 mt-20 lg:mt-0 bg-[#00000011] flex flex-col gap-5">
-        <h1 class="text-4xl text-center mb-5">
+      <section className="p-2 py-10 mb-20 lg:py-20 lg:px-20 mt-20 xl:mt-0 bg-[#00000011] flex flex-col gap-5">
+        <h1 className="text-4xl text-center mb-5">
           Contacta YA con nosotros en ZARAGOZA
         </h1>
-        <p class="text-center text-lg max-w-[800px] mx-auto">
+        <p className="text-center text-lg max-w-[800px] mx-auto">
           ¿Listo para lucir una manicura única? ¡Ponte en contacto con nosotros
           y reserva tu cita ahora para dar vida a tus ideas!
         </p>
         <Button text="Contacta ya" />
       </section>
-      <section class="py-10 pt-20 flex flex-col md:flex-row select-none -z-20">
+      {/*<section class="py-10 pt-20 flex flex-col md:flex-row select-none -z-20">
         <VerticalPic
           alt="Uñas de diseño lujoso"
           img={fancyNail}
@@ -158,12 +158,16 @@ export default function Index() {
           width="1125"
           height="1564"
         />
-      </section>
+      </section>*/}
 
-      <section class="flex flex-col gap-10 p-2 lg:py-20 lg:px-20">
-        <h2 className="text-2xl">
-          Modelos temporada <span className="text-amber-500">Halloween</span>
-        </h2>
+      <section className="flex flex-col gap-10 p-2 xl:py-10 lg:px-20">
+        <div className="flex items-center mb-5">
+          <div className="flex-1 h-[3px] bg-[#00000011] mx-5 lg:mx-10"></div>
+          <h2 className="text-2xl text-center">
+            Modelos temporada <span className="text-amber-500">Halloween</span>
+          </h2>
+          <div className="flex-1 h-[3px] bg-[#00000011] mx-5 lg:mx-10"></div>
+        </div>
         <FourProducts products={products} />
       </section>
     </>

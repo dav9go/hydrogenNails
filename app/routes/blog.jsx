@@ -10,7 +10,7 @@ export function meta() {
     {
       name: 'description',
       content:
-        'Sumérgete en el mundo del lujo y la elegancia. Descubre una experiencia de manicura única en Zaragoza, donde la belleza de tus uñas alcanza su máximo explendor.',
+        'Descubre la última moda y consejos de manicura y uñas con nuestros artículos.',
     },
     {
       property: 'theme-color',
@@ -29,7 +29,7 @@ export function meta() {
     {
       tagName: 'link',
       rel: 'canonical',
-      href: 'https://sunails.es',
+      href: 'https://sunails.es/blog',
     },
     {
       property: 'og:type',
@@ -37,12 +37,12 @@ export function meta() {
     },
     {
       property: 'og:title',
-      content: 'Su Nails | Manicura personalizada',
+      content: 'Su Nails | Blog de moda, manicura y uñas',
     },
     {
       property: 'og:description',
       content:
-        'Sumérgete en el mundo del lujo y la elegancia. Descubre una experiencia de manicura única en Zaragoza, donde la belleza de tus uñas alcanza su máximo explendor.',
+        'Descubre la última moda y consejos de manicura y uñas con nuestros artículos.',
     },
     {
       property: 'og:image',
@@ -59,7 +59,7 @@ export function meta() {
     },
     {
       property: 'og:url',
-      content: 'https://sunails.es',
+      content: 'https://sunails.es/blog',
     },
     {
       property: 'og:site_name',
@@ -71,12 +71,12 @@ export function meta() {
     },
     {
       property: 'twitter:title',
-      content: 'Su Nails | Manicura personalizada',
+      content: 'Su Nails | Blog de moda, manicura y uñas',
     },
     {
       property: 'twitter:description',
       content:
-        'Sumérgete en el mundo del lujo y la elegancia. Descubre una experiencia de manicura única en Zaragoza, donde la belleza de tus uñas alcanza su máximo explendor.',
+        'Descubre la última moda y consejos de manicura y uñas con nuestros artículos.',
     },
     {
       property: 'twitter:image',

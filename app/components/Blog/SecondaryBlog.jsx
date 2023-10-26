@@ -17,8 +17,8 @@ export default function SecondaryBlog({blog}) {
           <p className="text-[#e7c6ff]">{blog?.tags[0]}</p>
           <p>{blog?.authorV2.name}</p>
         </div>
-        <h2 className="text-2xl">{blog?.title}</h2>
-        <p>{blog?.excerpt}</p>
+        <h2 className="text-2xl line-clamp-3">{blog?.title}</h2>
+        <p className="line-clamp-6">{blog?.excerpt}</p>
       </div>
     </article>
   );
