@@ -7,7 +7,7 @@ export function VerticalPic({img, alt, text, width, height}) {
         alt={alt}
         width={width}
         height={height}
-        loading="lazy"
+        loading="eager"
       />
     </div>
   );

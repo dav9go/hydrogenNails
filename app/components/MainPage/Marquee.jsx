@@ -1,7 +1,7 @@
 export function Marquee() {
   return (
     <section className="absolute -left-10 top-[150px] xl:top-[25%] -rotate-[7deg] xl:-rotate-[14deg] text-lg xl:z-[1001]">
-      <div class="marquee border-b-4 border-black">
+      <div className="marquee border-b-4 border-black">
         <p>
           Elegante Creativa Exclusiva Trendy Impresionante Profesional
           Sofisticada Moderna Única Innovadora Glamurosa Personalizada Brillante

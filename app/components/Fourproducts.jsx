@@ -3,6 +3,7 @@ import {Image} from '@shopify/hydrogen';
 import net1 from '../images/net1.png';
 
 export function FourProducts({products}) {
+  console.log(products);
   return (
     <div class="grid grid-cols-2 xl:grid-cols-4 justify-items-center">
       {products?.nodes.map((product) => (
@@ -15,8 +16,17 @@ export function FourProducts({products}) {
               className="w-full h-full object-cover"
               src={product?.featuredImage?.url}
               alt={product?.featuredImage?.altText}
+              width={product?.featuredImage?.width}
+              height={product?.featuredImage?.height}
             />
-            <img className="absolute -top-24 -left-16" src={net1} />
+            <img
+              className="absolute -top-24 -left-16"
+              src={net1}
+              height={1200}
+              width={1200}
+              alt="halloween"
+              loading="eager"
+            />
           </div>
           <div class="flex flex-col justify-between h-[15%] p-1">
             <h3 class="text-center">{product?.title}</h3>
