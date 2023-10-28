@@ -1,10 +1,13 @@
+//Routing
+import {NavLink} from '@remix-run/react';
+
 export function meta() {
   return [
-    {title: 'Su Nails | Manicura personalizada en Zaragoza'},
+    {title: 'Su Nails | Contacta YA'},
     {
       name: 'description',
       content:
-        'Sumérgete en el mundo del lujo y la elegancia. Descubre una experiencia de manicura única en Zaragoza, donde la belleza de tus uñas alcanza su máximo explendor.',
+        'No te quedes con las ganas y contacta con nosotros para tener una manicura de lujo en Zaragoza.',
     },
     {
       property: 'theme-color',
@@ -23,7 +26,7 @@ export function meta() {
     {
       tagName: 'link',
       rel: 'canonical',
-      href: 'https://sunails.es',
+      href: 'https://sunails.es/contacto',
     },
     {
       property: 'og:type',
@@ -31,12 +34,12 @@ export function meta() {
     },
     {
       property: 'og:title',
-      content: 'Su Nails | Manicura personalizada',
+      content: 'Su Nails | Contacta YA',
     },
     {
       property: 'og:description',
       content:
-        'Sumérgete en el mundo del lujo y la elegancia. Descubre una experiencia de manicura única en Zaragoza, donde la belleza de tus uñas alcanza su máximo explendor.',
+        'No te quedes con las ganas y contacta con nosotros para tener una manicura de lujo en Zaragoza.',
     },
     {
       property: 'og:image',
@@ -53,7 +56,7 @@ export function meta() {
     },
     {
       property: 'og:url',
-      content: 'https://sunails.es',
+      content: 'https://sunails.es/contacto',
     },
     {
       property: 'og:site_name',
@@ -65,12 +68,12 @@ export function meta() {
     },
     {
       property: 'twitter:title',
-      content: 'Su Nails | Manicura personalizada',
+      content: 'Su Nails | Contacta YA',
     },
     {
       property: 'twitter:description',
       content:
-        'Sumérgete en el mundo del lujo y la elegancia. Descubre una experiencia de manicura única en Zaragoza, donde la belleza de tus uñas alcanza su máximo explendor.',
+        'No te quedes con las ganas y contacta con nosotros para tener una manicura de lujo en Zaragoza.',
     },
     {
       property: 'twitter:image',
@@ -103,8 +106,68 @@ export function meta() {
 export default function Contacto() {
   return (
     <>
-      <section className="mt-36 lg:mt-44 p-2 lg:px-20">
+      <section className="mt-36 lg:mt-44 p-2 lg:px-20 flex flex-col gap-5">
         <h1 className="text-4xl">Contacta YA. No te quedes, con las ganas!</h1>
+        <h2 className="text-2xl">Métodos de Contacto</h2>
+        <p>
+          Estamos disponibles a través de varios métodos de contacto. No dudes
+          en elegir el que mejor te funcione.
+        </p>
+        <ul>
+          <li>
+            Envíanos un correo electrónico a:{' '}
+            <NavLink to="mailto:david9go@gmail.com">david9go@gmail.com</NavLink>
+          </li>
+          <li>
+            Llámanos al:{' '}
+            <NavLink to="tel:+34608638374">+34 608 63 83 74</NavLink>
+          </li>
+          <li>
+            Conéctate en Redes Sociales:{' '}
+            <NavLink aria-label="Link a instagram" to="#">
+              Instagram
+            </NavLink>{' '}
+            |{' '}
+            <NavLink aria-label="Link a facebook" to="#">
+              Facebook
+            </NavLink>{' '}
+            |{' '}
+            <NavLink aria-label="Link a twitter" to="#">
+              Twitter
+            </NavLink>
+          </li>
+        </ul>
+        <h2>Horario de Atención</h2>
+        <p>
+          Nuestro horario de trabajo es de lunes a viernes, de 9:00 a.m. a 6:00
+          p.m. (hora local). Ten en cuenta que no estamos disponibles las 24
+          horas, pero te responderemos lo antes posible dentro de nuestro
+          horario laboral.
+        </p>
+
+        <h2>Tiempo de Respuesta</h2>
+        <p>
+          Nos esforzamos por responder a todas las consultas en un plazo de 24
+          horas. Puedes esperar una respuesta rápida de nuestro dedicado equipo
+          de soporte al cliente.
+        </p>
+
+        <h2>Mensaje de Agradecimiento</h2>
+        <p>
+          Gracias por elegirnos para tu cuidado de uñas. Tu satisfacción es
+          nuestra prioridad y estamos aquí para hacer que tu experiencia en el
+          cuidado de uñas sea excepcional. Esperamos poder ayudarte y esperamos
+          tu mensaje.
+        </p>
+
+        <h2>Preguntas Frecuentes</h2>
+        <p>
+          Si tienes preguntas comunes, te recomendamos consultar nuestra{' '}
+          <NavLink aria-label="Más información" to="/informacion">
+            página de Preguntas Frecuentes
+          </NavLink>{' '}
+          para encontrar respuestas a las consultas más habituales.
+        </p>
       </section>
     </>
   );

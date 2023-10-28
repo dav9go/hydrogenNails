@@ -6,7 +6,7 @@ import SecondaryBlog from '~/components/Blog/SecondaryBlog';
 
 export function meta() {
   return [
-    {title: 'Su Nails | Manicura personalizada en Zaragoza'},
+    {title: 'Su Nails | Manicura de lujo en Zaragoza'},
     {
       name: 'description',
       content:
