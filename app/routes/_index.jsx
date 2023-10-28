@@ -13,7 +13,7 @@ import snakeNail from '../images/snakeNail.webp';
 
 export function meta() {
   return [
-    {title: 'Su Nails | Manicura personalizada en Zaragoza'},
+    {title: 'Su Nails | Manicura de lujo en Zaragoza'},
     {
       name: 'description',
       content:
@@ -185,6 +185,7 @@ query FourProducts {
         }
       }
       title
+      handle
       description
       featuredImage {
         altText

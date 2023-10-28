@@ -9,7 +9,7 @@ export function Marquee() {
           Especializada Divertida Colorida Inspiradora&nbsp;
         </p>
       </div>
-      <div class="marquee marquee2 border-b-4 border-black">
+      <div className="marquee marquee2 border-b-4 border-black">
         <p>
           Elegante Creativa Exclusiva Trendy Impresionante Profesional
           Sofisticada Moderna Única Innovadora Glamurosa Personalizada Brillante

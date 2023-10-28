@@ -1,6 +1,8 @@
 //Images
 import {Image} from '@shopify/hydrogen';
 import net1 from '../images/net1.png';
+//Routing
+import {NavLink} from '@remix-run/react';
 
 export function FourProducts({products}) {
   console.log(products);
@@ -9,7 +11,7 @@ export function FourProducts({products}) {
       {products?.nodes.map((product) => (
         <article
           key={product?.id}
-          class="flex flex-col gap-3 h-[350px] w-[90%] md:h-[550px] lg:h-[600px] xl:h-[450px] lg:w-[340px] xl:w-[240px] "
+          class="flex flex-col gap-3 h-[350px] w-[90%] md:h-[550px] lg:h-[600px] xl:h-[475px] lg:w-[340px] xl:w-[240px] "
         >
           <div class="w-full h-[85%] overflow-hidden relative">
             <Image
@@ -32,6 +34,7 @@ export function FourProducts({products}) {
             <h3 class="text-center">{product?.title}</h3>
             {/*<p class="text-center">{product.price.minVariantPrice.amount}€</p>*/}
           </div>
+          <NavLink to={`/products/${product.handle}`}>Check</NavLink>
         </article>
       ))}
     </div>
