@@ -113,8 +113,6 @@ export async function loader({context}) {
 export default function Blog() {
   const {blogs} = useLoaderData();
   const [firstBlog, ...restOfBlogs] = blogs?.nodes[0]?.articles.nodes;
-  console.log(firstBlog, 'firstBlog');
-  console.log(restOfBlogs, 'restOfBlogss');
   return (
     <>
       <section className="mt-36 lg:mt-44 p-2 lg:px-20 flex flex-col gap-10">

@@ -13,7 +13,7 @@ export function Footer() {
           Vietnamese Nails <br></br>
           <span className="font-satisfy">Beauty</span>
         </div>
-        <div className="hidden md:block w-1/3 h-[3px] bg-[#00000011] mx-20"></div>
+        <div className="hidden  md:block w-1/3 h-[3px] bg-[#00000011] mx-20"></div>
       </div>
       <div className="md:hidden  h-[3px] bg-[#00000011] mx-10"></div>
       <div className=" lg:hidden flex justify-center items-center gap-20">
