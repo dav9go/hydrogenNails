@@ -128,7 +128,7 @@ export default function Index() {
       </section>
       <section className="p-2 py-10 mb-20 lg:py-20 lg:px-20 mt-20 xl:mt-0 bg-[#00000011] flex flex-col gap-5">
         <h1 className="text-4xl text-center mb-5">
-          Contacta YA con nosotros en ZARAGOZA
+          Contacta YA con nosotros en ZARAGOZA HOLA
         </h1>
         <p className="text-center text-lg max-w-[800px] mx-auto">
           ¿Listo para lucir una manicura única? ¡Ponte en contacto con nosotros
