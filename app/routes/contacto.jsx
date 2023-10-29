@@ -123,18 +123,9 @@ export default function Contacto() {
             <NavLink to="tel:+34608638374">+34 608 63 83 74</NavLink>
           </li>
           <li>
-            Conéctate en Redes Sociales:{' '}
-            <NavLink aria-label="Link a instagram" to="#">
-              Instagram
-            </NavLink>{' '}
-            |{' '}
-            <NavLink aria-label="Link a facebook" to="#">
-              Facebook
-            </NavLink>{' '}
-            |{' '}
-            <NavLink aria-label="Link a twitter" to="#">
-              Twitter
-            </NavLink>
+            Conéctate en Redes Sociales: <NavLink to="#">Instagram</NavLink> |{' '}
+            <NavLink to="#">Facebook</NavLink> |{' '}
+            <NavLink to="#">Twitter</NavLink>
           </li>
         </ul>
         <h2>Horario de Atención</h2>
@@ -163,9 +154,7 @@ export default function Contacto() {
         <h2>Preguntas Frecuentes</h2>
         <p>
           Si tienes preguntas comunes, te recomendamos consultar nuestra{' '}
-          <NavLink aria-label="Más información" to="/informacion">
-            página de Preguntas Frecuentes
-          </NavLink>{' '}
+          <NavLink to="/informacion">página de Preguntas Frecuentes</NavLink>{' '}
           para encontrar respuestas a las consultas más habituales.
         </p>
       </section>
